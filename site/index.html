@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>自进化 Harness 论文图谱</title>
+<meta name="description" content="118 篇自进化 Harness / Agent / Prompt 优化论文（2023–2026）的关系图，以及各论文使用的评价数据集与评分方式。">
+<meta property="og:title" content="自进化 Harness 论文图谱">
+<meta property="og:description" content="118 篇自进化 Harness / Agent / Prompt 优化论文的引用关系与评价方式。">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,620&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="wrap">
+  <p class="eyebrow">Harness-RSI · 论文关系数据</p>
+  <h1>自进化 Harness 论文图谱</h1>
+  <p class="lede">
+    118 篇自进化 Harness / Agent / Prompt 优化论文（2023–2026），按"相关工作"与"对比方法"两类提及关系生成的关系图，并汇总各论文使用的评价数据集与评分方式。
+  </p>
+
+  <div class="kpi-row" id="kpiRow"></div>
+
+  <section class="panel">
+    <div class="view-tabs">
+      <button class="view-tab is-active" data-view="graph">论文关系图</button>
+      <button class="view-tab" data-view="evaluation">评价方式</button>
+    </div>
+
+    <div id="graphView">
+      <p class="panel-note">拖动空白处平移，滚轮缩放，拖动节点可微调位置；悬停查看论文，点击在右侧固定论文详情；箭头指向"被提及/被对比"的论文。</p>
+      <div class="filter-row">
+        <label class="select-field">
+          <span class="filter-label">年份</span>
+          <select class="select-input" id="yearSelect">
+            <option value="all">全部年份</option>
+          </select>
+        </label>
+        <label class="select-field">
+          <span class="filter-label">关系类型</span>
+          <select class="select-input" id="typeSelect">
+            <option value="both">全部关系</option>
+            <option value="related">相关工作</option>
+            <option value="comparison">对比方法</option>
+          </select>
+        </label>
+        <input class="search-input" id="graphSearch" type="text" placeholder="搜索论文名 / 标题 / 机构…">
+        <button class="toggle-btn" id="tableToggle" style="margin-left:auto">切换为表格视图</button>
+      </div>
+      <div class="graph-area" id="graphArea">
+        <div class="graph-shell" id="graphShell">
+          <canvas id="graph"></canvas>
+          <div class="zoom-controls">
+            <button class="zoom-btn" id="zoomIn" title="放大">+</button>
+            <button class="zoom-btn" id="zoomOut" title="缩小">−</button>
+            <button class="zoom-btn" id="zoomReset" title="重置">⤾</button>
+          </div>
+        </div>
+        <div class="table-scroll" id="tableWrap" hidden>
+          <table class="data-table">
+            <thead>
+              <tr><th>论文</th><th>年份</th><th>机构</th><th class="num">连接数</th></tr>
+            </thead>
+            <tbody id="tableBody"></tbody>
+          </table>
+        </div>
+        <aside class="side-panel side-panel--float" id="sidePanel" hidden></aside>
+      </div>
+      <div class="legend-row">
+        <div class="legend-block">
+          <span class="ramp-swatch"></span>
+          <span>关联度（连接数），浅 → 深</span>
+        </div>
+        <div class="legend-block legend-arrow">
+          <span class="legend-line"></span>
+          <span>相关工作提及 →</span>
+        </div>
+        <div class="legend-block legend-arrow">
+          <span class="legend-line dashed"></span>
+          <span>对比方法 →</span>
+        </div>
+        <div class="legend-years" id="legendYears"></div>
+      </div>
+    </div>
+
+    <div id="evalView" hidden>
+      <p class="panel-note">评价方式的结构化记录：按数据集看被谁用过，或按论文看用了哪些数据集、如何评分。</p>
+      <details class="legend-details" id="judgmentLegend" open>
+        <summary>评价判定标准——"客观 / 主观"与"评分器"是怎么界定的</summary>
+        <div id="judgmentLegendBody"></div>
+      </details>
+      <div class="filter-row">
+        <label class="select-field">
+          <span class="filter-label">视角</span>
+          <select class="select-input" id="perspectiveSelect">
+            <option value="dataset">按数据集</option>
+            <option value="paper">按论文</option>
+          </select>
+        </label>
+        <label class="select-field">
+          <span class="filter-label">类目</span>
+          <select class="select-input" id="categorySelect">
+            <option value="all">全部类目</option>
+          </select>
+        </label>
+        <label class="select-field">
+          <span class="filter-label">评价性质</span>
+          <select class="select-input" id="natureSelect">
+            <option value="all">全部</option>
+            <option value="客观">客观</option>
+            <option value="主观">主观</option>
+          </select>
+        </label>
+        <input class="search-input" id="evalSearch" type="text" placeholder="搜索数据集或论文…">
+      </div>
+      <div class="workspace no-panel" id="evalWorkspace">
+        <div class="workspace-main">
+          <div class="eval-list" id="evalList"></div>
+        </div>
+        <aside class="side-panel" id="sidePanelEval" hidden></aside>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<div class="tooltip" id="tooltip"></div>
+
+<script src="assets/app.js"></script>
+</body>
+</html>

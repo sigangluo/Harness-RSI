@@ -1,0 +1,14 @@
+{
+  "name": "harness-rsi",
+  "version": "0.1.0",
+  "description": "自进化 Harness / Agent / Prompt 优化论文图谱：论文之间的引用关系与评价方式",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "build": "npm run export:paper-relations && npm run export:paper-dataset-relations",
+    "export:paper-relations": "node scripts/export-paper-relations.mjs",
+    "export:paper-dataset-relations": "node scripts/export-paper-dataset-relations.mjs",
+    "serve": "python3 -m http.server -d site 4322"
+  }
+}

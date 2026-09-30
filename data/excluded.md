@@ -1,0 +1,296 @@
+# 已排除论文
+
+以下 292 篇论文/方法已确认不收录，再次遇到无需重复评估。
+
+- SkillOS
+- MetaCLAW
+- SkillRL
+- Skill0
+- SEVerA
+- SAGE
+- Skill1
+- GPTSwarm（Language Agents as Optimizable Graphs）
+- G-Designer
+- MaAS（Multi-Agent Architecture Search via Agentic Supernet）
+- TTT-Discover
+- PAE（Proposer-Agent-Evaluator）
+- Retroformer
+- AutoFlow
+- EvoPrompting
+- Eureka（Human-Level Reward Design via Coding LLMs）
+- Toolformer
+- WebGPT
+- RLPrompt
+- ToolLLM
+- Gorilla
+- STaR
+- Large Language Models Can Self-Improve
+- TEMPERA
+- Agent Q
+- Reinforcement learning for self-improving agent with skill library
+- WebRL
+- Self-Play Fine-Tuning (SPIN)
+- REFINER
+- Recursive Introspection (RISE)
+- Language to Rewards for Robotic Skill Synthesis
+- Evolution through Large Models (ELM)
+- OMNI
+- OMNI-EPIC
+- MEM1
+- Trial and Error（ETO）
+- Evolver（EvolveR）
+- System-Level Natural Language Feedback（Yuan et al. 2023）
+- EvolveSearch
+- Learning Performance-Improving Code Edits
+- MemSkill
+- Natural Language Reinforcement Learning（NLRL）
+- Discovering Preference Optimization Algorithms（DiscoPOP）
+- SEAgent
+- ToolACE-DEV
+- ChemAgent / CheMatAgent
+- ECO（Google，代码优化）
+- HDLdebugger
+- Make Every Move Count（DeLorenzo et al.，MCTS-RTL代码生成）
+- ChatEDA
+- A Modern Self-Referential Weight Matrix / A 'Self-Referential' Weight Matrix
+- Aguvis
+- Beyond Human Data / ReST
+- Deep Reinforcement Learning from Human Preferences
+- DeepSeek-R1
+- Discovering Evolution Strategies via Meta-Black-Box Optimization
+- Discovering Faster Matrix Multiplication Algorithms with RL（AlphaTensor）
+- Dynamic Evaluation of Transformer Language Models
+- Eliminating Meta Optimization through Self-Referential Meta Learning
+- Fine-tuning Language Models from Human Preferences
+- Finetuned Language Models Are Zero-Shot Learners（FLAN）
+- FireAct
+- GPT Understands Too（P-tuning）
+- Human-Level Play in the Game of Diplomacy（CICERO）
+- Let's Verify Step by Step
+- LLMatic
+- LoRA
+- MemAgent
+- Model-Agnostic Meta-Learning（MAML）
+- Motif
+- Multimodal Web Navigation with Instruction-Finetuned Foundation Models（WebGUM）
+- Navigating the Digital World as Humans Do
+- Openclaw-rl
+- Proximal Policy Optimization Algorithms
+- Reinforcement Learning on Web Interfaces Using Workflow-Guided Exploration
+- s1: Simple Test-Time Scaling
+- SeeClick
+- TALM
+- Tent: Fully Test-Time Adaptation by Entropy Minimization
+- Test-Time Training with Self-Supervision
+- Thought Cloning
+- ToolkenGPT
+- Training Verifiers to Solve Math Word Problems（GSM8K）
+- Ui-r1
+- Webagent-r1
+- Websailor
+- AutoSkill
+- SkillX
+- ReasoningBank
+- Memento
+- Memento 2
+- Contextual Experience Replay
+- SkillFlow
+- Graph of Skills
+- EchoTrail-GUI
+- Agent Workflow Memory（AWM）
+- Agent-KB
+- A-Mem / A-MEM
+- G-Memory
+- CLIN
+- DyLAN
+- CREATOR
+- Mem0
+- MemInsight
+- HiAgent
+- Synapse
+- VADAR
+- ICAL
+- LATS（Language Agent Tree Search）
+- ExpEL
+- Teaching Large Language Models to Self-Debug
+- MemoryBank
+- MemGPT
+- GRIPS
+- Mobile-Agent-E
+- Hypotheses-to-Theories（HtT）
+- Recursive Language Models（RLM）
+- Jigsaw
+- AutoGuide
+- InstructZero
+- Language Models Can Solve Computer Tasks（RCI）
+- AgentDistill
+- Archon
+- BAGEL
+- Reward Is Enough / ICRL
+- SciMON
+- SWE-Exp
+- Evolving Deeper LLM Thinking（Mind Evolution）
+- MOOSE
+- Adaptive Self-improvement LLM Agentic System for ML Library Development
+- Ghost in the Minecraft（GITM）
+- GPS（Genetic Prompt Search）
+- PAIR
+- TAP（Tree of Attacks with Pruning）
+- LLM-Aided Compilation for Tensor Accelerators
+- PerfCodeGen
+- WarpDrive
+- Coscientist
+- Brownlee et al. 2023（Genetic Improvement Mutations）
+- Kang & Yoo, 2023（Objective-Tailored Genetic Improvement）
+- ResearchAgent（Baek et al. 2024）
+- RTLFixer
+- AdaPlanner
+- Explorer（Web Trajectory Synthesis）
+- Large Language Models to Enhance Bayesian Optimization
+- Pyvision
+- Reasoning with Language Model Is Planning with World Model（RAP，Hao et al.）
+- Think-in-Memory
+- Tree Search for Language Model Agents
+- Web Agents with World Models
+- ReAct
+- Chain-of-Thought (CoT)
+- Self-Refine
+- Reflexion
+- Self-Consistency
+- Tree-of-Thoughts
+- Least-to-Most Prompting
+- Graph of Thoughts
+- Program of Thoughts
+- Show Your Work (Scratchpads)
+- PAL (Program-Aided LM)
+- AutoPrompt
+- Language Models Are Few-Shot Learners (GPT-3)
+- Language Models Are Unsupervised Multitask Learners (GPT-2)
+- Training language models to follow instructions (InstructGPT)
+- Self-Instruct
+- ExpertPrompting
+- Prefix-Tuning
+- The Power of Scale for Parameter-Efficient Prompt Tuning
+- Reprompting (Gibbs Sampling)
+- DeepSeekMath
+- AI Chains
+- ART (Automatic Multi-Step Reasoning and Tool-Use)
+- Automatic Chain of Thought Prompting
+- Automatically Neutralizing Subjective Bias in Text
+- Can Generalist Foundation Models Outcompete Special-Purpose Tuning? (Medprompt)
+- CodeT
+- Evaluating Large Language Models Trained on Code (Codex)
+- Hard Prompts Made Easy
+- Inner Monologue
+- Language Models are Multilingual Chain-of-Thought Reasoners
+- Language Models as Zero-Shot Planners
+- Measuring and Narrowing the Compositionality Gap (Self-Ask)
+- Mind's Eye
+- MM-ReAct
+- Program Synthesis with Large Language Models
+- Visual Programming (VisProg)
+- MetaGPT
+- AutoGen
+- CAMEL
+- Communicative Agents for Software Development (ChatDev)
+- HuggingGPT
+- TaskMatrix.AI
+- Language Model Cascades
+- Tool Learning with Foundation Models
+- SWE-agent
+- OpenHands
+- Chameleon
+- ViperGPT
+- AgentVerse
+- AutoAgents
+- Generative Agents (Simulacra)
+- DSPy（框架论文本身，区别于已收录MIPRO）
+- Describe, Explain, Plan and Select (DEPS)
+- Cognitive Architectures for Language Agents (CoALA)
+- Biomni
+- LLM4AD
+- Agents (Open-Source Framework for Autonomous Language Agents)
+- Augmenting Large Language Models with Chemistry Tools (ChemCrow)
+- AutoGPT
+- BabyAGI
+- Beyond Browsing: API-Based Web Agents
+- ChatDB
+- ChatGPT for Robotics
+- Claude-code
+- CRISPR-GPT
+- Data Interpreter
+- Democratizing AI Scientists using ToolUniverse
+- How to Create a Skill with Claude Through Conversation
+- Introducing the Model Context Protocol
+- LEGO (Causality Explanation Generation)
+- MemOS
+- Mindstorms in Natural Language-Based Societies of Mind
+- Organizing, Orchestrating, and Benchmarking Agent Skills at Ecosystem Scale
+- OWL (Optimized Workforce Learning)
+- Paper2Agent
+- Robin
+- SkillNet
+- SkillOrchestra
+- SkillRouter
+- WebVoyager
+- Youtu-agent
+- A Survey of Self-Evolving Agents
+- A Comprehensive Survey of Self-Evolving AI Agents
+- A Survey on the Memory Mechanism of LLM Based Agents
+- A Survey on Large Language Model Based Autonomous Agents
+- The Prompt Report
+- Pre-train Prompt and Predict
+- Unleashing the Potential of Prompt Engineering
+- SoK: Agentic Skills
+- Self-Improving AI: An Analysis
+- Gödel Machines: Self-Referential Universal Problem Solvers
+- Evolutionary Principles in Self-Referential Learning
+- Equipping Agents for the Real World with Agent Skills
+- AI-GAs (AI-Generating Algorithms)
+- An Empirical Study of Catastrophic Forgetting in LLMs During Continual Fine-Tuning
+- Automated Machine Learning: Methods, Systems, Challenges
+- Bounded Recursive Self-Improvement
+- Debating with More Persuasive LLMs Leads to More Truthful Answers
+- Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena
+- Memory in the Age of AI Agents
+- Scaling Large-Language-Model-Based Multi-Agent Collaboration
+- What are Skills?
+- WebArena
+- SkillsBench
+- AgentBench
+- SWE-bench
+- WebShop
+- Mind2Web
+- GPT-4 Technical Report
+- API-Bank
+- Gaia
+- Skillret
+- Swe-bench pro
+- Swe-skills-bench
+- TaskBench
+- VisualWebArena
+- WorkArena
+- Meta-Agent-Workflow
+- Letta Skill Learning
+- OpenEvolve: An Open-Source Evolutionary Coding Agent
+- The AI CUDA Engineer
+- Optimizing Generative AI by Backpropagating Language Model Feedback
+- Joint Prompt Optimization of Stacked LLMs Using Variational Inference
+- Language Agents as Optimizable Graphs
+- Dynamic LLM-Agent Network: An LLM-Agent Collaboration Framework with Agent Team Optimization
+- Multi-Agent Architecture Search via Agentic Supernet
+- Creator: Disentangling Abstract and Concrete Reasonings of LLMs through Tool Creation
+- Alita（初代）
+- EvoSkills: Self-evolving agent skills via co-evolutionary verification
+- ProcMEM: Learning Reusable Procedural Memory from Experience via Non-Parametric PPO for LLM Agents
+- VLM Agents Generate Their Own Memories: Distilling Experience into Embodied Programs of Thought
+- Large Language Models As Evolution Strategies（EvoLLM）
+- SPRING（Studying the Paper and Reasoning to Play Games）
+- Symbolic Discovery of Optimization Algorithms（Lion优化器）
+- Large Language Model-Based Evolutionary Optimizer（LMEA）
+- The Virtual Lab
+- DreamCoder
+- Leveraging Language to Learn Program Abstractions and Search Heuristics
+- Llama 2 / LLaMA / PaLM
+- Memory Networks
+- Towards an Actual Gödel Machine Implementation
